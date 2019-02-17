@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let viewController = loadMainController()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = viewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -40,6 +47,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // FUNCTIONS
+    
+    func loadMainController() -> UIViewController {
+
+        let moviesController = MoviesCollectionViewController(nibName: "MoviesCollectionViewController", bundle: nil)
+        
+        let navigationController =
+            UINavigationController(rootViewController: moviesController)
+        
+        return navigationController
+    }
 
 }
 

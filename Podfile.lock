@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Haneke (1.0.2)
+  - KeychainAccess (3.1.2)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.0)
+  - Haneke (= 1.0.2)
+  - KeychainAccess (= 3.1.2)
+  - SVProgressHUD (= 2.2.5)
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Haneke: 01454a67322faa0dd9d81fc0f447885044e71521
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 6d81ba379c827096b26cf34d9fc8e5d90fe61260
+
+COCOAPODS: 1.4.0
